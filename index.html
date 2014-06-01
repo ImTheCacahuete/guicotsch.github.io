@@ -29,40 +29,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
-  function showSwf() {
-    document.getElementById("preloader").style.visibility = "hidden";
-    $('#bloc-trueview').css('display', 'none');
-    $('#bloc-jeu-flash').append($('<br>').css('clear', 'both'));
-    $('#bloc-jeu-flash').height(540);
-    if ($('#jeu-swf').length === 0) {
-      $('#bloc-jeu-swf').append(
-        $('<object>')
-          .attr('id', 'jeu-swf')
-          .attr('type', 'application/x-shockwave-flash')
-          .attr('width', '746')
-          .attr('height', '540')
-          .attr('data', 'http://f.jeu.info/039/691.swf')
-          .attr('title', "Uphill Rush 6")
-          .append($('<param>').attr('name', 'movie').attr('value', 'http://f.jeu.info/039/691.swf'))
-          .append($('<param>').attr('name', 'base').attr('value', 'http://f.jeu.info/039/691.swf'))
-          .append($('<param>').attr('name', 'quality').attr('value', 'high'))
-          .append($('<param>').attr('name', 'allowscriptaccess').attr('value', 'always'))
-          .append($('<param>').attr('name', 'wmode').attr('value', 'direct'))
-          .append($('<param>').attr('name', 'scale').attr('value', 'showall'))
-      );
-      
-    }
-  }
-  
- function removeAdSwf() {
-    showSwf();
-  }
-  function noAdsReturned() {
-    showSwf();
-  }
 
-</script>
 
 <object id="preloader" width="746" height="540" align="middle" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"></object>
 
